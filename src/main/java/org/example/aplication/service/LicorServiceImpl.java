@@ -29,11 +29,11 @@ public class LicorServiceImpl implements LicorService{
 
     @Override
     public Licor obtenerLicor(int id) {
-        return obtenerLicor(id);
+        return licorRepository.obtener(id);
     }
 
     @Override
     public List<Licor> obtenerTodosLosLicores() {
-        return obtenerTodosLosLicores();
+        return licorRepository.obtenerTodos();
     }
 }

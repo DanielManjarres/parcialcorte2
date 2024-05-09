@@ -46,4 +46,14 @@ public class Licor implements Serializable {
     public void setValor(double valor) {
         this.valor = valor;
     }
+
+    @Override
+    public String toString() {
+        return "Licor{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", presentacion='" + presentacion + '\'' +
+                ", valor=" + valor +
+                '}';
+    }
 }
